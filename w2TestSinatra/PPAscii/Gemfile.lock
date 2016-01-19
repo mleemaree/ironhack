@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    artii (2.1.1)
     backports (3.6.7)
     multi_json (1.11.2)
     rack (1.6.4)
@@ -27,6 +28,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  artii
   sinatra
   sinatra-reloader
 
