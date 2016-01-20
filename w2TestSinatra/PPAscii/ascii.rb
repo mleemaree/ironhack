@@ -11,7 +11,7 @@ get "/ascii" do
 	erb :ascii
 end
 
-post "/make-ascii"do
+post "/make-ascii" do
 	@made_ascii = params[:user_text]
 	@text_typo = params[:text_typo]
 	if @text_typo == "special" && @made_ascii == "secret"
