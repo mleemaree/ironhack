@@ -1,0 +1,11 @@
+.home-widget span{
+	border: 5px solid black;
+	background:transparent;
+	border-radius:35px;
+	height:70px;
+	width:70px;
+	line-height: 65px;
+	text-align:center;
+	margin: 0 auto;
+	font-size:20px;
+}
