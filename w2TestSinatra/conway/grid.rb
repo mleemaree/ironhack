@@ -8,6 +8,7 @@ class Board
   end
 
   def populate_new_board
+
     (0...8).each do |row|
       (0...8).each do |cell|
         rand = Random.new.rand(0..1)
@@ -19,17 +20,13 @@ class Board
         else
           @board[row][cell] = dead
         end
-
-        if @board[row][cell]== alive
-          puts "X"
-        else
-          puts " "
-        end
       end
     end
+
     @board.each do |r|
-      puts r.each { |p| p }.join(" ")
+      r.each { |p| puts p.state}.join(" ")
     end
+
   end
 
   def run_game
