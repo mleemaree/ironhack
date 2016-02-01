@@ -1,0 +1,41 @@
+#map{
+	width:100%;
+	height:500px;
+	background-color:green;
+}
+
+.mobile-cine{
+	position:absolute;
+	left:40%;
+	top:50%;
+}
+
+.pin{
+	height: 50px;
+}
+
+.movie-times-wrapper{
+	background:#FFF5FA;
+	text-align:center;
+	width:150px;
+	float:right;
+	display:none;
+}
+
+.spinner{
+	width:50px;
+	display:inline-block;
+}
+
+.ui-spinner{
+	display:inline-block;
+}
+
+.time{
+	height:40px;
+	font-size:1em;
+	&:focus{
+		outline:none;
+	}
+}
+

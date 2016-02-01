@@ -1,0 +1,66 @@
+$break-sm: 767px;
+$break-md: 992px;
+$break-lg:1200px;
+
+.full{
+	height:500px;
+	background-color:gray;
+	display:table;
+	@include background-size(cover);
+	&:nth-child(even){
+		background-color: #AEF0D8
+	}
+	@media screen and (max-width:$break-sm){
+		display:none;
+	}
+}
+
+.gallery-thumbs{
+	display:block;
+}
+
+.m-title{
+	position:absolute;
+	right:50px;
+	bottom: 30px;
+	h2{
+		color: white;
+	}
+}
+
+.thumbs{
+	height:250px;
+	background-color:#F0D717;
+	width:170px;
+	@media screen and (max-width:$break-sm){
+		height:500px;
+		width:100%;
+	}
+}
+
+.info{
+	display:none;
+	height:450px;
+	background-color:rgba(0,0,0, 0.7);
+	margin:2%;
+}
+
+.swiper-button-prev{
+	margin-left:3%;
+}
+
+.swiper-button-next{
+	margin-right:3%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+	@media screen and (max-width:$break-sm){
+		top:50%;
+	}
+}
+
+.swiper-pagination{
+	@media screen and (max-width:$break-sm){
+		display:none;
+	}
+}

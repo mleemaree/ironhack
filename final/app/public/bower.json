@@ -1,0 +1,37 @@
+{
+  "name": "moviefinder",
+  "description": "\"find movies\"",
+  "main": "index.js",
+  "authors": [
+    "Emily MaRee <lee@mleemaree.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "movie",
+    "english"
+  ],
+  "homepage": "https://github.com/mleemaree/ironhack",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap-sass": "^3.3.6",
+    "bootstrap": "^3.3.6",
+    "backbone": "^1.2.3",
+    "underscore": "^1.8.3",
+    "jquery-ui": "^1.11.4",
+    "font-awesome": "^4.5.0",
+    "Swiper": "swiper#^3.3.0"
+  }
+}

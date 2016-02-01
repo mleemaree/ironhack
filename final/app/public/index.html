@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Movie Finder</title>
+	<!-- bower-css:start -->	
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link href="bower_components/Swiper/dist/css/swiper.css" rel="stylesheet">
+	<!-- bower-css:end -->
+	<!--begin Compass Stylesheets-->
+	  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	  <!--[if IE]>
+	      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	  <![endif]-->
+	<!--end Compass Stylesheets-->
+</head>
+<body>
+<div class="container">
+	<div class="col-xs-12 h-wrapper">
+		<h1>Choose a Cinema</h1>
+	</div>
+	<div class="col-xs-12 map-wrapper">
+		<div id="map">
+	</div>
+</div><!--END Map Container -->
+<div class="container">
+	<div class="mobile-cine">
+		<img class="pin" src="img/icons/pin.png" alt="pin">
+		<div class="movie-times-wrapper">
+			<h3>Times</h3>
+			<div class="movie-times" id="yelmo">
+				<h3 class="time">12h30</h3>
+				<div class="times-wrapper">
+					<form id="buy-tix" action="">
+						<div class="adults times form-group">
+							<label for="ad-spin">Adults</label>
+							<input id="ad-spin" class="spinner form-control" name="value">
+						</div>
+						<div class="child times form-group">
+							<label for="ch-spin">Children</label>
+							<input id="ch-spin" class="spinner form-control" name="value">
+						</div>
+						<div class="stud times form-group">
+							<label for="st-spin">Students</label>
+							<input id="st-spin" class="spinner form-control" name="value">
+						</div>
+						<button class="btn btn-default" type="submit">Buy Tickets</button>
+					</form>
+				</div>
+				<h3 class="time">15h30</h3>
+				<div class="times-wrapper">
+					<form id="buy-tix" action="">
+						<div class="adults times form-group">
+							<label for="ad-spin">Adults</label>
+							<input id="ad-spin" class="spinner form-control" name="value">
+						</div>
+						<div class="child times form-group">
+							<label for="ch-spin">Children</label>
+							<input id="ch-spin" class="spinner form-control" name="value">
+						</div>
+						<div class="stud times form-group">
+							<label for="st-spin">Students</label>
+							<input id="st-spin" class="spinner form-control" name="value">
+						</div>
+						<button class="btn btn-default" type="submit">Buy Tickets</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div><!--END Mobile Cine -->
+</div><!--END MOBILE Theatre Selector Container-->
+
+
+
+
+<!-- bower-js:start -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="bower_components/requirejs/require.js"></script>
+<script src="bower_components/Swiper/dist/js/swiper.js"></script>
+<!-- bower-js:end -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAZJ7JCeBQr3xyFsi1xmArMUCNDho1NQQ&signed_in=true&callback=initMap"
+        async defer></script>
+<script src="bower_components/cs/csi.min.js"></script>
+<script src= "js/app.js"></script>
+</body>
+</html>

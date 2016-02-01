@@ -1,0 +1,76 @@
+$break-sm: 767px;
+$break-md: 992px;
+$break-lg:1200px;
+
+@mixin lbtn-back($png){
+	background:url("../img/lang-btns/" + $png + ".png");
+	@include background-size(cover);
+}
+
+.lang-btn-wrapper{
+	text-align:center;
+}
+
+.lang-btn-lg{
+	height:300px;
+	width:300px;
+	border-radius: 60px;
+	@media screen and (max-width:$break-sm){
+		height:150px;
+		width:150px;
+		border-radius:45px;
+	}
+	&:focus{
+		outline:none !important;
+	}
+}
+
+.lang-btn{
+	height:150px;
+	width:150px;
+	border-radius:45px;
+	@media screen and (max-width:$break-sm){
+		height:75px;
+		width:75px;
+		border-radius:22px;
+	}
+	&:focus{
+		outline:none !important;
+	}
+}
+
+.lang-lbl{
+	display:block;
+}
+
+#eng{
+	@include lbtn-back("eng-btn");
+}
+
+#spa{
+	@include lbtn-back("spa-btn");
+}
+
+#ger{
+	@include lbtn-back("ger-btn");
+}
+
+#fre{
+	@include lbtn-back("fre-btn");
+
+}
+
+#itl{
+	@include lbtn-back("itl-btn");
+
+}
+
+#chi{
+	@include lbtn-back("chi-btn");
+
+}
+
+#por{
+	@include lbtn-back("por-btn");
+
+}

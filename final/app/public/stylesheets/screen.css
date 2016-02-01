@@ -1,0 +1,345 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*@import "compass/reset";*/
+/* line 10, ../sass/_lselect.scss */
+.lang-btn-wrapper {
+  text-align: center;
+}
+
+/* line 14, ../sass/_lselect.scss */
+.lang-btn-lg {
+  height: 300px;
+  width: 300px;
+  border-radius: 60px;
+}
+@media screen and (max-width: 767px) {
+  /* line 14, ../sass/_lselect.scss */
+  .lang-btn-lg {
+    height: 150px;
+    width: 150px;
+    border-radius: 45px;
+  }
+}
+/* line 23, ../sass/_lselect.scss */
+.lang-btn-lg:focus {
+  outline: none !important;
+}
+
+/* line 28, ../sass/_lselect.scss */
+.lang-btn {
+  height: 150px;
+  width: 150px;
+  border-radius: 45px;
+}
+@media screen and (max-width: 767px) {
+  /* line 28, ../sass/_lselect.scss */
+  .lang-btn {
+    height: 75px;
+    width: 75px;
+    border-radius: 22px;
+  }
+}
+/* line 37, ../sass/_lselect.scss */
+.lang-btn:focus {
+  outline: none !important;
+}
+
+/* line 42, ../sass/_lselect.scss */
+.lang-lbl {
+  display: block;
+}
+
+/* line 46, ../sass/_lselect.scss */
+#eng {
+  background: url("../img/lang-btns/eng-btn.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 50, ../sass/_lselect.scss */
+#spa {
+  background: url("../img/lang-btns/spa-btn.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 54, ../sass/_lselect.scss */
+#ger {
+  background: url("../img/lang-btns/ger-btn.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 58, ../sass/_lselect.scss */
+#fre {
+  background: url("../img/lang-btns/fre-btn.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 63, ../sass/_lselect.scss */
+#itl {
+  background: url("../img/lang-btns/itl-btn.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 68, ../sass/_lselect.scss */
+#chi {
+  background: url("../img/lang-btns/chi-btn.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 73, ../sass/_lselect.scss */
+#por {
+  background: url("../img/lang-btns/por-btn.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 5, ../sass/_date.scss */
+#date-picker {
+  text-align: center;
+}
+
+/* line 9, ../sass/_date.scss */
+.ui-datepicker-header {
+  padding: 2% 0;
+}
+
+/* line 13, ../sass/_date.scss */
+.ui-datepicker-title {
+  font-size: 2em;
+}
+
+/* line 17, ../sass/_date.scss */
+.ui-datepicker-prev {
+  float: left;
+}
+
+/* line 21, ../sass/_date.scss */
+.ui-datepicker-next {
+  float: right;
+}
+
+/* line 25, ../sass/_date.scss */
+.ui-datepicker-calendar {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 30, ../sass/_date.scss */
+table {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+/* line 35, ../sass/_date.scss */
+thead {
+  display: none;
+}
+
+/* line 39, ../sass/_date.scss */
+th {
+  text-align: center;
+}
+
+/* line 43, ../sass/_date.scss */
+td {
+  border: 1px solid black;
+  height: 150px;
+  width: 50px;
+}
+@media screen and (max-width: 767px) {
+  /* line 43, ../sass/_date.scss */
+  td {
+    height: 60px;
+    width: 45px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  /* line 43, ../sass/_date.scss */
+  td {
+    height: 100px;
+  }
+}
+
+/* line 56, ../sass/_date.scss */
+.ui-datepicker-unselectable {
+  border: none;
+}
+
+/* line 5, ../sass/_mselector.scss */
+.full {
+  height: 500px;
+  background-color: gray;
+  display: table;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 10, ../sass/_mselector.scss */
+.full:nth-child(even) {
+  background-color: #AEF0D8;
+}
+@media screen and (max-width: 767px) {
+  /* line 5, ../sass/_mselector.scss */
+  .full {
+    display: none;
+  }
+}
+
+/* line 18, ../sass/_mselector.scss */
+.gallery-thumbs {
+  display: block;
+}
+
+/* line 22, ../sass/_mselector.scss */
+.m-title {
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+}
+/* line 26, ../sass/_mselector.scss */
+.m-title h2 {
+  color: white;
+}
+
+/* line 31, ../sass/_mselector.scss */
+.thumbs {
+  height: 250px;
+  background-color: #F0D717;
+  width: 170px;
+}
+@media screen and (max-width: 767px) {
+  /* line 31, ../sass/_mselector.scss */
+  .thumbs {
+    height: 500px;
+    width: 100%;
+  }
+}
+
+/* line 41, ../sass/_mselector.scss */
+.info {
+  display: none;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 2%;
+}
+
+/* line 48, ../sass/_mselector.scss */
+.swiper-button-prev {
+  margin-left: 3%;
+}
+
+/* line 52, ../sass/_mselector.scss */
+.swiper-button-next {
+  margin-right: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 56, ../sass/_mselector.scss */
+  .swiper-button-prev, .swiper-button-next {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 62, ../sass/_mselector.scss */
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+/* line 1, ../sass/_tselect.scss */
+#map {
+  width: 100%;
+  height: 500px;
+  background-color: green;
+}
+
+/* line 7, ../sass/_tselect.scss */
+.mobile-cine {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+/* line 13, ../sass/_tselect.scss */
+.pin {
+  height: 50px;
+}
+
+/* line 17, ../sass/_tselect.scss */
+.movie-times-wrapper {
+  background: #FFF5FA;
+  text-align: center;
+  width: 150px;
+  float: right;
+  display: none;
+}
+
+/* line 25, ../sass/_tselect.scss */
+.spinner {
+  width: 50px;
+  display: inline-block;
+}
+
+/* line 30, ../sass/_tselect.scss */
+.ui-spinner {
+  display: inline-block;
+}
+
+/* line 34, ../sass/_tselect.scss */
+.time {
+  height: 40px;
+  font-size: 1em;
+}
+/* line 37, ../sass/_tselect.scss */
+.time:focus {
+  outline: none;
+}
+
+/* line 19, ../sass/screen.scss */
+body {
+  font-family: 'gill sans';
+  margin-bottom: 5%;
+}
+
+/* line 24, ../sass/screen.scss */
+.h-wrapper, .b-wrapper {
+  text-align: center;
+}
+/* line 26, ../sass/screen.scss */
+.h-wrapper h1, .b-wrapper h1 {
+  font-weight: 300;
+}
+
+/* line 31, ../sass/screen.scss */
+.b-wrapper {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  /* line 31, ../sass/screen.scss */
+  .b-wrapper {
+    display: block;
+  }
+}
