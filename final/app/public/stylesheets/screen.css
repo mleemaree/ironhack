@@ -269,18 +269,11 @@ td {
   }
 }
 
-/* line 1, ../sass/_tselect.scss */
+/* line 6, ../sass/_tselect.scss */
 #map {
   width: 100%;
   height: 500px;
   background-color: green;
-}
-
-/* line 7, ../sass/_tselect.scss */
-.mobile-cine {
-  position: absolute;
-  left: 40%;
-  top: 50%;
 }
 
 /* line 13, ../sass/_tselect.scss */
@@ -289,33 +282,128 @@ td {
 }
 
 /* line 17, ../sass/_tselect.scss */
+.times-head {
+  padding-top: 20px;
+}
+
+/* line 21, ../sass/_tselect.scss */
 .movie-times-wrapper {
   background: #FFF5FA;
   text-align: center;
-  width: 150px;
-  float: right;
+  width: 200px;
   display: none;
+  position: relative;
 }
 
-/* line 25, ../sass/_tselect.scss */
+/* line 29, ../sass/_tselect.scss */
+.adults {
+  padding-top: 20px;
+}
+
+/* line 34, ../sass/_tselect.scss */
+.mbt {
+  margin-top: 20px;
+  margin-bottom: -50px;
+}
+
+/* line 39, ../sass/_tselect.scss */
 .spinner {
   width: 50px;
   display: inline-block;
 }
 
-/* line 30, ../sass/_tselect.scss */
+/* line 44, ../sass/_tselect.scss */
 .ui-spinner {
   display: inline-block;
 }
 
-/* line 34, ../sass/_tselect.scss */
+/* line 48, ../sass/_tselect.scss */
 .time {
   height: 40px;
   font-size: 1em;
 }
-/* line 37, ../sass/_tselect.scss */
+/* line 51, ../sass/_tselect.scss */
 .time:focus {
   outline: none;
+}
+@media screen and (max-width: 767px) {
+  /* line 48, ../sass/_tselect.scss */
+  .time {
+    background: #95B7FF;
+    margin: 0;
+    line-height: 3;
+    border-top: 1px solid black;
+  }
+  /* line 59, ../sass/_tselect.scss */
+  .time:first-child {
+    border: none;
+  }
+}
+
+/* line 65, ../sass/_tselect.scss */
+.cineInfo-wrapper {
+  padding-top: 20px;
+}
+
+/* line 69, ../sass/_tselect.scss */
+.cineInfo span {
+  display: block;
+}
+
+/* line 73, ../sass/_tselect.scss */
+.times-wrapper {
+  padding-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  /* line 73, ../sass/_tselect.scss */
+  .times-wrapper {
+    padding-top: 0;
+  }
+}
+
+/* line 80, ../sass/_tselect.scss */
+.time {
+  text-align: center;
+}
+/* line 82, ../sass/_tselect.scss */
+.time button {
+  background: none;
+  border: 1px solid black;
+  padding: 6% 25%;
+}
+/* line 86, ../sass/_tselect.scss */
+.time button:focus {
+  outline: none;
+}
+
+/* line 92, ../sass/_tselect.scss */
+.active {
+  color: orange;
+  border: 1px solid orange !important;
+  background: none;
+}
+/* line 96, ../sass/_tselect.scss */
+.active:focus {
+  outline: none;
+}
+
+/* line 101, ../sass/_tselect.scss */
+.tickets {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* line 106, ../sass/_tselect.scss */
+.buy-tickets-wrapper {
+  padding-top: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 111, ../sass/_tselect.scss */
+  #desktop-theatre-info {
+    display: none;
+  }
 }
 
 /* line 19, ../sass/screen.scss */
@@ -342,4 +430,9 @@ body {
   .b-wrapper {
     display: block;
   }
+}
+
+/* line 38, ../sass/screen.scss */
+.section {
+  padding-top: 150px;
 }

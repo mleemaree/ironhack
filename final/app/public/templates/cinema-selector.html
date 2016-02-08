@@ -1,0 +1,110 @@
+<div class="container">
+	<div class="col-xs-12 h-wrapper">
+		<h1>Choose a Cinema</h1>
+	</div>
+	<div class="col-xs-12 map-wrapper">
+		<div id="map">
+	</div>
+</div><!--END Map Container -->
+<div class="container-fluid"><!--MOBILE THEATRE SELECTOR -->
+	<div class="mobile-cine">
+		<img class="pin" src="img/icons/pin.png" alt="pin">
+		<div class="movie-times-wrapper">
+			<h3>Times</h3>
+			<div class="movie-times" id="yelmo">
+				<h3 class="time">12h30</h3>
+				<div class="times-wrapper">
+					<form id="buy-tix" action="">
+						<div class="adults times form-group">
+							<label for="ad-spin">Adults</label>
+							<input id="ad-spin" class="spinner form-control" name="value">
+						</div>
+						<div class="child times form-group">
+							<label for="ch-spin">Children</label>
+							<input id="ch-spin" class="spinner form-control" name="value">
+						</div>
+						<div class="stud times form-group">
+							<label for="st-spin">Students</label>
+							<input id="st-spin" class="spinner form-control" name="value">
+						</div>
+						<button class="btn btn-default mbt" type="submit">Buy Tickets</button>
+					</form>
+				</div>
+				<h3 class="time">15h30</h3>
+				<div class="times-wrapper">
+					<form id="buy-tix" action="">
+						<div class="adults times form-group">
+							<label for="ad-spin">Adults</label>
+							<input id="ad-spin" class="spinner form-control" name="value">
+						</div>
+						<div class="child times form-group">
+							<label for="ch-spin">Children</label>
+							<input id="ch-spin" class="spinner form-control" name="value">
+						</div>
+						<div class="stud times form-group">
+							<label for="st-spin">Students</label>
+							<input id="st-spin" class="spinner form-control" name="value">
+						</div>
+						<button class="btn btn-default mbt" type="submit">Buy Tickets</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div><!--END Mobile Cine -->
+</div><!--END MOBILE Theatre Selector Container-->
+<div class="container-fluid" id="desktop-theatre-info"><!--START DESKTOP THEATRE INFORMATION-->
+	<div class="cineInfo-wrapper row">
+		<div class="col-xs-8">
+			<div class="cineInfo">
+				<span class="name">
+					Yelmo Icaria
+				</span>
+				<span class="address">
+					<b>Yelmo Icaria</b>, Pg. de Gràcia, 13 Barcelona, 08007
+				</span>
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="row">
+				<div class="col-xs-4 icon"><img class="pin" src="img/icons/chair.png" alt="pin"></div>
+				<div class="col-xs-4 icon"><img class="pin" src="img/icons/dinner.png" alt="pin"></div>
+				<div class="col-xs-4 icon"><img class="pin" src="img/icons/3d.png" alt="pin"></div>
+			</div>
+		</div>
+	</div>
+	<form id="buy-tix" action="">
+		<div class="times-wrapper row">
+			<div class="col-xs-3 time">
+				<button type="button">10h00</button>
+			</div>
+			<div class="col-xs-3 time">
+				<button type="button">12h00</button>
+			</div>
+			<div class="col-xs-3 time">
+				<button type="button">15h15</button>
+			</div>
+			<div class="col-xs-3 time">
+				<button type="button">20h45</button>
+			</div>
+		</div>
+		<div class="tickets row">
+			<div class="col-xs-4 adults form-group">
+				<label for="ad-spin">Adults</label>
+				<input id="ad-spin" class="spinner form-control" name="value">
+			</div>
+			<div class="col-xs-4 children form-group">
+				<label for="ch-spin">Children</label>
+				<input id="ch-spin" class="spinner form-control" name="value">
+			</div>
+			<div class="col-xs-4 students form-group">
+				<label for="st-spin">Students</label>
+				<input id="st-spin" class="spinner form-control" name="value">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 buy-tickets-wrapper">
+				<button class="btn btn-default" type="submit">Buy Tickets</button>
+			</div>
+		</div>
+	</form>
+</div><!-- END DESKTOP THEATRE INFORMATION-->

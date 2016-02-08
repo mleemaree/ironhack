@@ -1,0 +1,13 @@
+<h2>Click which project you would like to associate <%= @person.name  %> with</h2>
+
+<ul>
+<% @projects.each do | project | %>
+<li> <%= project.name  %> </li>
+<% end %>
+
+</ul>
+
+<%= form_for [@project, @person] do |f| %>
+
+	
+<% end %>

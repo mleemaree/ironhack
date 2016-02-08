@@ -1,0 +1,9 @@
+
+<div>
+	<span>Project:</span> <%= @project.name %> <br>
+	<span>Description:</span>
+	<span><% if @project.description != nil %>
+		- <%= @project.description %>
+	<% end %></span> 
+</div>
+

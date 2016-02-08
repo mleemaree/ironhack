@@ -1,25 +1,39 @@
+$break-sm: 767px;
+$break-md: 992px;
+$break-lg:1200px;
+
+
 #map{
 	width:100%;
 	height:500px;
 	background-color:green;
 }
 
-.mobile-cine{
-	position:absolute;
-	left:40%;
-	top:50%;
-}
 
 .pin{
 	height: 50px;
 }
 
+.times-head{
+	padding-top:20px;
+}
+
 .movie-times-wrapper{
 	background:#FFF5FA;
 	text-align:center;
-	width:150px;
-	float:right;
+	width:200px;
 	display:none;
+	position:relative;
+}
+
+.adults{
+	padding-top:20px;
+}
+
+
+.mbt{
+	margin-top:20px;
+	margin-bottom: -50px;
 }
 
 .spinner{
@@ -37,5 +51,65 @@
 	&:focus{
 		outline:none;
 	}
+	@media screen and (max-width:$break-sm){
+		background:#95B7FF;
+		margin:0;
+		line-height:3;
+		border-top:1px solid black;
+		&:first-child{
+			border:none;
+		}
+	}
 }
 
+.cineInfo-wrapper{
+	padding-top:20px;
+}
+
+.cineInfo span{
+	display:block;
+}
+
+.times-wrapper{
+	@media screen and (max-width:$break-sm){
+		padding-top:0;
+	}
+	padding-top:60px;
+}
+
+.time{
+	text-align:center;
+	button{
+		background:none;
+		border:1px solid black;
+		padding: 6% 25%;
+		&:focus{
+			outline:none;
+		}
+	}
+}
+
+.active{
+	color:orange;
+	border:1px solid orange !important;
+	background:none;
+	&:focus{
+		outline:none;
+	}
+}
+
+.tickets{
+	text-align:center;
+	padding-top:50px;
+}
+
+.buy-tickets-wrapper{
+	padding-top:50px;
+	text-align:center;
+}
+
+#desktop-theatre-info{
+	@media screen and (max-width:$break-sm){
+		display:none;
+	}
+}

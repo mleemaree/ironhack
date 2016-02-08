@@ -1,0 +1,13 @@
+<ol>
+	<% @projects.reverse.each do |project| %>
+		<li>
+			<%= link_to(project.name, project_entries_path(project)) %>
+			<% if project.description != nil %>
+				- <em><%= project.description %></em>
+			<% end %>
+		</li>
+	<% end %>
+</ol>
+
+<%= link_to('Make New Project', new_project_path)  %>
+

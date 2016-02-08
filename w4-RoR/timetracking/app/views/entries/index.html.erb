@@ -1,0 +1,37 @@
+<%= flash_message  %>
+
+<h1><%= @project.name  %></h1>
+<% i=0 %>
+
+
+<%= link_to("Make New Entry", new_project_entry_path(@project))  %>
+
+<% @project.entries.each do |p| %>
+<ul>
+	<li>Entry <%=  i += 1 %></li>
+	<li>Hours: <%= p.hours %></li>
+	<li>Minutes: <%= p.minutes %></li>
+	<% if p.comments != nil %>
+		<li>Comments: <%= p.comments %></li>
+	<% end %>
+	<li>Created: <%= p.created_at.asctime  %></li>
+</ul>
+<%= link_to('Edit Entry', edit_project_entry_path(p.id, @project.id)) %>
+<%= link_to 'Delete', project_entry_path(@project, p), method: :delete, data: {confirm: 'Are you sure?'}  %>
+<% end %>
+
+<br>
+
+
+<h2>Total Hours This Month: <%= total_hours_in_month(@entries).round(2)  %></h2>
+
+<h3>People Associated with this Project</h3>
+<ol>
+	<% @project.people.uniq.each do | person |  %>
+	<li><%= person.name  %></li>
+	<% end %>
+</ol>
+<%= link_to('Back to Projects', projects_path) %>
+
+
+

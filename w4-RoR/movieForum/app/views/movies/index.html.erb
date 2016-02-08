@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Movie</title>
+</head>
+<body>
+
+<%= form_tag movies_path, method: 'get' do %>
+	<%= label_tag :search, 'Movie Title Here!' %>	
+	<%= text_field_tag :search %>
+	<%= submit_tag 'Search' %>
+
+<% end %>
+<ul>
+<% if @searched != [] %>
+	<% @searched.each do |movie| %>
+		<li><%= movie.title %></li>
+	<% end %>
+<% else %>
+	<% @imdb_search.each do |movie| %>
+		<li><%= movie.title %></li>
+	<% end %>
+<% end %>	
+</ul>
+</body>
+</html>
