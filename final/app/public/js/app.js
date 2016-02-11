@@ -111,7 +111,7 @@ if($('body').width()>=766){
 //END - Times
 
 $('.time button').click(function() {
-    $('.time button').addClass('active').not(this).removeClass('active');
+    $(this).addClass('active').not(this).removeClass('active');
 
     // TODO: insert whatever you want to do with $(this) here
 });

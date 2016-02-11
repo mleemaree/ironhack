@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+<button id="show_chars">Show ME!!!</button>
+<div class="container">
+	<ul class="names">
+		<ul class="others"></ul>
+	</ul>
+</div>
+
+<div class="container">
+	<form action="#" id="new_char">
+		<label for="name">Name:</label>
+		<input type="text" value="name" class="name">
+		<label for="occupation">Occupation</label>
+		<input type="text" value="occupation" class="occ">
+		<label for="debt">Debt</label>
+		<select class="debt">
+			<option value="true">true</option>
+			<option value="false">false</option>
+		</select>
+		<label for="weapon">Weapon</label>
+		<input type="text" value="weapon" class="weapon">
+		<input type="submit">
+	</form>
+</div>
+
+<div class="result"></div>
+	
+<script src="app.js"></script>
+</body>
+</html>
