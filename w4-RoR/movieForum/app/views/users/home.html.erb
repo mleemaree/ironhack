@@ -1,0 +1,22 @@
+<nav>
+	<ul class="top-nav">
+	<% if session[:user_id] == nil %>
+	  <li><%= link_to "Sign up", "/signup" %></li>
+<!-- 	  <li><%= link_to "My profile", "/profile" %></li>
+	  <li><%= link_to "All profiles", "/users" %></li> -->
+	</ul>
+	<% end %>
+  <div class="login">
+	  <% if session[:user_id] != nil %>
+	  	<%= link_to "Logout", '/logout', :method => :delete  %>
+	  <% else %>
+	  	<%= link_to "Login", '/login'  %>
+	  <% end %>
+  </div>
+</nav>
+
+<h1 class="title">Hello, <%= @name %>!</h1>
+<% if session[:user_id] == nil %>
+	<h3 class="sign-in">Please <%= link_to "Sign up", "/signup" %> or <%= link_to "Log In", "/login" %></h3>
+<% end %>
+

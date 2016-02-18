@@ -1,0 +1,56 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "compass";
+@import "compass/reset";
+
+body{
+	font-family:arial black;
+}
+
+.login{
+	display:inline-block;
+	float:right;
+	padding-right: 20px;
+	a{
+		padding-left:10px;
+		color:#260601;
+	}
+}
+
+.top-nav li, .top-nav{
+	display:inline-block;
+}
+
+.top-nav{
+	padding:0 20px;
+	float:right;
+}
+
+h3{
+	text-align:center;
+}
+
+a{
+	line-height: 3em;
+	text-decoration:none;
+	&:hover, &:visited{
+		color:#260601;
+	}
+}
+
+nav{
+	background-color:#ECFFF9;
+	border: 10px solid #260601;
+		height:50px;
+}
+
+.title{
+	padding-top: 50px;
+	text-align:center;
+	font-size:2em;
+}
+
+.sign-in a{
+	color:#FF2805;
+}

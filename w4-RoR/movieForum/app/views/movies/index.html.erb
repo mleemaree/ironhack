@@ -11,18 +11,23 @@
 	<%= label_tag :search, 'Movie Title Here!' %>	
 	<%= text_field_tag :search %>
 	<%= submit_tag 'Search' %>
-
 <% end %>
+
 <ul>
-<% if @searched != [] %>
-	<% @searched.each do |movie| %>
-		<li><%= movie.title %></li>
-	<% end %>
-<% else %>
-	<% @imdb_search.each do |movie| %>
-		<li><%= movie.title %></li>
-	<% end %>
-<% end %>	
+	<% if @searched != [] %>
+		<% @searched.each do |movie| %>
+			<li><%= movie.title %></li>
+		<% end %>
+	<% else %>
+		<% @imdb_search.each do |movie| %>
+			<li class="movie-info">
+				<span><%= movie.title %></span>
+				<img class="poster" src="<%= movie.poster  %>" alt="<%= movie.title %>-poster"> 
+				<span><%= link_to("Start A Discussion", movie_path(movie.id)) %>  </span>
+			</li>
+		<% end %>
+	<% end %>	
 </ul>
+
 </body>
 </html>
